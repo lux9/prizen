@@ -1,4 +1,4 @@
-require "pry-byebug"
+# require "pry-byebug"
 Product.destroy_all
 
 puts Product.count
