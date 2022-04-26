@@ -21,11 +21,11 @@
   <h5>Puppies</h5>
   <ul style="padding-inline-start: unset;">
     <% @products.each do |p| %>
-      <div class="d-flex my-5 border">
-        <img src="<%= p.pic_link %>" alt="">
-        <div>
-          <p><strong><%= p.name %></strong></p>
-          <p>$<%= p.actual_price %> <a href='<%= p.link %>'>link</a></p>
+      <div class="row w-30 border">
+        <img class="col-lg-4 col-12" src="<%= p.pic_link %>" alt="">
+        <div class="col-lg-8 col-12">
+          <p class="product-name"><strong><%= p.name %></strong></p>
+          <p class="product-price">$<%= p.actual_price %> <a href='<%= p.link %>'>link</a></p>
         </div>
 
       </div>
